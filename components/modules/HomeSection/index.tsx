@@ -20,7 +20,7 @@ export const HomeSection: FC = () => {
                         <button
                             className="p-4 mt-6 text-sm text-white bg-teal-500 rounded-md "
                             type="button">
-                            Get in touch
+                            <a href="#contact">Get in Touch</a>
                         </button>
                     </div>
                 </div>

@@ -7,6 +7,7 @@ import { scrollTo } from "redux/actions";
 import { HomeSection } from "components/modules/HomeSection";
 import { AboutMeSection } from "components/modules/AboutMeSection";
 import { ContactSection } from "components/modules/ContactSection";
+import { ProjectSection } from "components/modules/Projects";
 
 function withProps<T extends Record<string, unknown>>(props: T): T {
     return props;
@@ -57,6 +58,7 @@ export default function Home(): ReactElement {
                 <ul className="flex items-center">
                     <NavItem href="#home" text="Home" />
                     <NavItem href="#about-me" text="About Me" />
+                    <NavItem href="#projects" text="Projects" />
                     <NavItem
                         href="#contact"
                         text="Get In Touch"
@@ -67,6 +69,7 @@ export default function Home(): ReactElement {
 
             <HomeSection />
             <AboutMeSection />
+            <ProjectSection />
             <ContactSection />
         </div>
     );
