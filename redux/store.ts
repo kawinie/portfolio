@@ -4,6 +4,7 @@ import {} from "redux/actions";
 import * as reducers from "redux/reducers";
 
 const logger: Middleware = (_) => (next) => (action) => {
+    console.log("Activated: ", action.type);
     next(action);
 };
 

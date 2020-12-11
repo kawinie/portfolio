@@ -5,3 +5,5 @@ import {} from "redux/models";
 //   :::::: A C T I O N S : :  :   :    :     :        :          :
 // ────────────────────────────────────────────────────────────────
 //
+
+export const scrollTo = createAction<string>("scrollTo");

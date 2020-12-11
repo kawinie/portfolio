@@ -17,4 +17,9 @@ function ifElse<B extends boolean, T, K>(c: B, a: T, b: K) {
 // ──────────────────────────────────────────────────────────────────
 //
 
-export {};
+export const path = createReducer("#home", (builder) =>
+    builder.addCase(actions.scrollTo, (_, action) => {
+        window.location.href = action.payload;
+        return action.payload;
+    })
+);
